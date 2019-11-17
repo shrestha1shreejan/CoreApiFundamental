@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreCodeCamp.Controllers
 {
-  [Route("api/[controller]")]
-  public class ValuesController
-  {
-
-    public string[] Get()
+    [Route("api/[controller]")]
+    [ApiController]
+    public class TalksController : ControllerBase
     {
-      return new[] { "Hello", "From","Pluralsight" };
     }
-  }
 }
